@@ -1,5 +1,5 @@
 package edu.bu.met.cs665;
 
-public interface driverInterface {
+public interface DriverInterface {
     void deliveryUpdate(String message);
 }

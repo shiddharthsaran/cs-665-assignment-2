@@ -1,20 +1,23 @@
 package edu.bu.met.cs665;
 
-public class driver implements driverInterface{
+public class Driver implements DriverInterface{
     public String name;
     public String vehicleType;
-    public shop shop;
+    public Shop shop;
     public String orderUpdate;
-    public driver(String name, String vehicleType, shop shop){
+    public Driver(String name, String vehicleType, Shop shop){
         this.name = name;
         this.vehicleType = vehicleType;
-        this.shop = shop;
         this.orderUpdate = "";
+        this.shop = shop;
+        this.shop.subscribe(this);
 
     }
 
     @Override
     public void deliveryUpdate(String message) {
+        this.orderUpdate = message;
+        System.out.println(message);
 
     }
 }
