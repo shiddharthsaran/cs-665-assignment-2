@@ -2,12 +2,12 @@ package edu.bu.met.cs665;
 
 public class Driver implements DriverInterface{
     public String name;
-    public String vehicleType;
+    public VehicleInterface vehicle;
     public Shop shop;
     public String orderUpdate;
-    public Driver(String name, String vehicleType, Shop shop){
+    public Driver(String name, VehicleInterface vehicle, Shop shop){
         this.name = name;
-        this.vehicleType = vehicleType;
+        this.vehicle = vehicle;
         this.orderUpdate = "";
         this.shop = shop;
         this.shop.subscribe(this);
