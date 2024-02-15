@@ -15,9 +15,6 @@ public class Main {
         dict.put("Jerry", new Scooter("Yamaha"));
 
         Shop foodShop = new Shop("MI", "Nowhere");
-//        for (int i =0; i < 5 ;i++){
-//            new Driver("Driver #" + i, "van", foodShop);
-//        }
 
         Enumeration<String> keys = dict.keys();
         while (keys.hasMoreElements()) {
@@ -29,7 +26,8 @@ public class Main {
 
         foodShop.createDeliveryRequest("new addr","customer 1");
         foodShop.sendOrderUpdate();
-        foodShop.createDeliveryRequest("new ","customer 2");
+        System.out.println();
+        foodShop.createDeliveryRequest("addr ","customer 2");
         foodShop.sendOrderUpdate();
     }
 }
