@@ -39,4 +39,8 @@ public class Shop implements ShopInterface{
         this.deliveryRequest = deliveryRequest;
 
     }
+
+    public ArrayList<DriverInterface> getDriverList() {
+        return this.driverList;
+    }
 }

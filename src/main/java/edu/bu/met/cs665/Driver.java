@@ -17,7 +17,11 @@ public class Driver implements DriverInterface{
     @Override
     public void deliveryUpdate(String message) {
         this.orderUpdate = message;
-        System.out.println(message);
+        System.out.println(this.name + " received " + message);
 
+    }
+
+    public String getOrderUpdate(){
+        return this.orderUpdate;
     }
 }
