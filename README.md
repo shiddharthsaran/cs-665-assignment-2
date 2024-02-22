@@ -10,7 +10,7 @@
 Please add a paragraph or two overviewing the objectives of the assignment.
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/shiddharthsaran/cs-665-assignment-2
 
 # Implementation Description 
 
@@ -19,6 +19,7 @@ For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can
 be easily added or removed in the future.
+  - 
 - Discuss the simplicity and understandability of your implementation, ensuring that it is
 easy for others to read and maintain.
 - Describe how you have avoided duplicated code and why it is important.
