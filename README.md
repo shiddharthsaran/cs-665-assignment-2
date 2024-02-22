@@ -2,12 +2,17 @@
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
 | Name         | Shiddharth Saran M         |
-| Date         | 02/15/2024                 |
+| Date         | 02/22/2024                 |
 | Course       | Spring                     |
 | Assignment # | 2                          |
 
 # Assignment Overview
 Please add a paragraph or two overviewing the objectives of the assignment.
+ - A collection of retailers in a busy city have collaborated with local freelance van, taxi, and
+   scooter drivers for the delivery of products to customer destinations. Your task is to develop a
+   notification system that will inform drivers about delivery requests. Upon receiving a product
+   delivery order from a store, a delivery request must be generated and sent to all available
+   drivers.
 
 # GitHub Repository Link:
 https://github.com/shiddharthsaran/cs-665-assignment-2
@@ -19,12 +24,15 @@ For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can
 be easily added or removed in the future.
-  - 
+  - Implemented flexibility through using interface for vehicles, drivers and shops so each class implemented can have its own custom methods and attributes.
 - Discuss the simplicity and understandability of your implementation, ensuring that it is
 easy for others to read and maintain.
+  - For simplicity and understanding I have added comments and doc blocks for all classes and used descriptive names to aid in understanding.
 - Describe how you have avoided duplicated code and why it is important.
+  - Avoided duplicate code for different types of vehicles by using a VehicleInterface. Also DriverInterface and ShopInterface to avoid duplicate code while creating drivers and shops.
 - If applicable, mention any design patterns you have used and explain why they were
 chosen.
+  - I have chosen and implemented Observer pattern as the requirement was to send updates to multiple drivers from a central source. By using observer pattern, it adds loose coupling and flexibility through easy driver subscribe and unsubscribe to a shop.
 
 
 # Maven Commands
