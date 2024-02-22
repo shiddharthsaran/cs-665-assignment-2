@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Shop implements ShopInterface{
 
-    String shopName;
-    String shopAddress;
-    int orderId;
+    public String shopName;
+    public String shopAddress;
+    public int orderId;
 
     public ArrayList <DriverInterface> driverList = new ArrayList<DriverInterface>();
     public DeliveryRequest deliveryRequest;

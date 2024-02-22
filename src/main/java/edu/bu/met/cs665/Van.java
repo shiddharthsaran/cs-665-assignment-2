@@ -1,9 +1,9 @@
 package edu.bu.met.cs665;
 
 public class Van implements VehicleInterface{
-    String vanBrand;
+    public String vanBrand;
 
-    String engineType;
+    public String engineType;
 
     public Van(String vanBrand){
         this.vanBrand = vanBrand;

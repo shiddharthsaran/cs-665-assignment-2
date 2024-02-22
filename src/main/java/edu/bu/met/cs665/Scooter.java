@@ -2,8 +2,8 @@ package edu.bu.met.cs665;
 
 public class Scooter implements VehicleInterface{
 
-    String scooterBrand;
-    String engineType;
+    public String scooterBrand;
+    public String engineType;
 
     public Scooter(String scooterBrand){
         this.scooterBrand = scooterBrand;

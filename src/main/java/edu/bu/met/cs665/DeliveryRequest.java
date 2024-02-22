@@ -1,11 +1,11 @@
 package edu.bu.met.cs665;
 
 public class DeliveryRequest {
-    String shopName;
-    String shopAddress;
-    int orderId;
-    String deliveryAddress;
-    String customerName;
+    public String shopName;
+    public String shopAddress;
+    public int orderId;
+    public String deliveryAddress;
+    public String customerName;
 
     public DeliveryRequest(String shopName, String shopAddress, int orderId, String deliveryAddress, String customerName){
         this.shopName = shopName;

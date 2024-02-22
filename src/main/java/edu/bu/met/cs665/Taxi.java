@@ -1,8 +1,8 @@
 package edu.bu.met.cs665;
 
 public class Taxi implements VehicleInterface{
-    String taxiName;
-    String engineType;
+    public String taxiName;
+    public String engineType;
 
     public Taxi(String taxiName){
         this.taxiName = taxiName;
